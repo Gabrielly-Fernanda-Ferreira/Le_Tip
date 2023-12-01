@@ -1,25 +1,14 @@
-# le_tip
+# Le/Tip
 
-## Project setup
+## Projeto
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+Projeto web e mobile que realiza cálculos referentes a gorjeta e utiliza uma API de conversão de moedas.
 ```
 
-### Compiles and minifies for production
+### Instalação
 ```
-npm run build
+1- Clone o Le/Tip.
+2- No terminal execute nessa pasta o comando yarn install e yarn serve.  
+3- Clone a API currency-conversion.
+4- Coloque o servidor na porta 4000 por meio do comando yarn serve 4000.
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-"# Le_Tip" 
