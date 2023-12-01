@@ -73,6 +73,7 @@ export default
 
   .bill
   {
+    color: #000000;
     margin-top: 3px;
     font-size: 18px;
     font-weight: bold;

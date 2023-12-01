@@ -143,11 +143,6 @@
         border-radius: 8px;
     }
 
-    .position
-    {
-        position: fixed;
-    }
-
     .coin
     {
         font-size: 35px;
@@ -168,6 +163,8 @@
     .row 
     {
         margin-top: 30px;
+        display: flex;
+        align-items: center;
     }
 
     .field
