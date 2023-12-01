@@ -4,7 +4,7 @@
         <p class="title"> Le/Tip <i class="fa-regular fa-money-bill-1 coin"> </i> </p>
 
         <div class="row">
-            <div class="col-6" v-if="tela1===true">
+            <div class="col-6" v-if="screen===true">
 
                 <div class="input-group mb-3 field">
                     <div class="input-group-prepend">
@@ -67,14 +67,11 @@
             </div>
 
             <div class="col-6 mobile">
-                <LeTip :bill="bill" :tip="tip" :people="people" :sign="sign" v-if="tela1===false"> </LeTip>
+                <LeTip :bill="bill" :tip="tip" :people="people" :sign="sign" v-if="screen===false"> </LeTip>
             </div>
 
-            <!-- <i class="fa-solid fa-arrow-right mobile arrow" v-on:click="right" v-if="tela1===true"> </i>
-            <i class="fa-solid fa-arrow-left mobile arrow"  v-on:click="left"  v-if="tela1===false"> </i> -->
-
-            <i class="fa-solid fa-arrow-right mobile arrow" v-on:click="right" v-if="tela1===true"> </i>
-            <i class="fa-solid fa-arrow-left mobile arrow"  v-on:click="left"  v-if="tela1===false"> </i>
+            <i class="fa-solid fa-arrow-right mobile arrow" v-on:click="right" v-if="screen===true"> </i>
+            <i class="fa-solid fa-arrow-left mobile arrow"  v-on:click="left"  v-if="screen===false"> </i>
 
 
         </div>
@@ -101,7 +98,7 @@
                 tip: 10,
                 people: 2,
                 coin: false,
-                tela1: true
+                screen: true
             }
         },
         computed: 
@@ -119,11 +116,11 @@
         {
             right()
             {
-                this.tela1 = false
+                this.screen = false
             },
             left()
             {
-                this.tela1 = true
+                this.screen = true
             },
             onInput(event) 
             {
