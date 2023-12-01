@@ -163,8 +163,6 @@
     .row 
     {
         margin-top: 30px;
-        display: flex;
-        align-items: center;
     }
 
     .field
