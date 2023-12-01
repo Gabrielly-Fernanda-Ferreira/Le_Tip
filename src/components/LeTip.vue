@@ -15,8 +15,8 @@
     <label class="field"> {{ sign }} {{ forPeople }} </label>
 
     <label class="word"> Em R$: </label>
-    <label class="field" v-if="this.sign==='€'"> R$ {{ currencyConversion ? (currencyConversion?.conversions[0].rate * this.forPeople).toFixed(2).replace(".", ",") : '0.00' }}</label>
-    <label class="field" v-if="this.sign==='$'"> R$ {{ currencyConversion ? (currencyConversion?.conversions[1].rate * this.forPeople).toFixed(2).replace(".", ",") : '0.00' }}</label>
+    <label class="field" v-if="this.sign==='€'"> R$ {{ currencyConversion ? (currencyConversion?.conversions[0].rate * this.forPeople).toFixed(2).replace(".", ",") : '0,00' }}</label>
+    <label class="field" v-if="this.sign==='$'"> R$ {{ currencyConversion ? (currencyConversion?.conversions[1].rate * this.forPeople).toFixed(2).replace(".", ",") : '0,00' }}</label>
 
   </div> 
 
